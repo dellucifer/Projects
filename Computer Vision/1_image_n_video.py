@@ -1,9 +1,11 @@
+# Importing OpenCV Module
 import cv2
 
 # img = cv2.imread('pic2.jpeg')
 # cv2.imshow('Friends',img)
 # cv2.waitKey(0)
 
+# Defining and configuring Frame
 frameWidth = 640
 frameHeight = 320
 
@@ -11,6 +13,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3,frameWidth)
 cap.set(4,frameHeight)
 
+# Capturing the Image continuously
 while True:
     success,img = cap.read()
     cv2.imshow('LiveCam',img)
